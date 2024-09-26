@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo leve para contraste */
+    text-align: center;
+}
+
+header {
+    background-color: #004B87; /* Azul Grêmio */
+    color: white;
+    padding: 20px;
+}
+
+main {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border-radius: 5px;
+    border: 1px solid #004B87; /* Azul Grêmio */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #004B87; /* Azul Grêmio */
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #db4242; /* Vermelho para o botão Limpar */
+    color: white;
+    margin-left: 10px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #004B87; /* Azul Grêmio */
+}
+
+/* Adicionando uma cor de destaque para o texto das categorias */
+.resultado span {
+    font-weight: bold;
+}
+.fundo{
+    z-index: -4;
+}

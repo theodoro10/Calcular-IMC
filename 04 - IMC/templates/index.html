@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <main>
+        <form method="POST">
+            <div>
+                <label for="peso">Peso (kg):</label>
+                <input type="text" name="peso" id="peso" required>
+            </div>
+            <div>
+                <label for="altura">Altura (m):</label>
+                <input type="text" name="altura" id="altura" required>
+            </div>
+            <button type="submit">Calcular IMC</button>
+            <button type="button" onclick="document.getElementById('peso').value=''; document.getElementById('altura').value='';">Limpar</button>
+        </form>
+        {% if resultado is not none %}
+            <div class="resultado">
+                Seu IMC é: {{ resultado }} - {{ categoria }}
+            </div>
+        {% endif %}
+    </main>
+    <img src="/static/assets/imc.png" alt="" class="fundo"
+    width="1000">
+</body>
+</html>
